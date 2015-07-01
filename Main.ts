@@ -10,4 +10,4 @@ var vehicleTwo: Vehicle.Vehicle = car;
 
 outputElement.innerHTML = vehicleOne.do() + " " + vehicleOne.getName() + "<br />"
                         + vehicleTwo.do() + " " + vehicleTwo.getName() + "<br />"
-                        + car.do() + " " + car.getName() + " " + car.doCar() + "<br />";
+                        + car.do() + " " + car.getName() + " -> " + car.doCar() + "<br />";
