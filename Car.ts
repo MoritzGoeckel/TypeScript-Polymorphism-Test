@@ -1,19 +1,19 @@
-import VEHICLE = require("Vehicle");
+///<reference path='Vehicle.ts'/>
 
-export class Car extends VEHICLE.Vehicle
-{
-    constructor (name: string)
-    {
-        super("CAR: " + name);
+module Car {
+
+    export class Car extends Vehicle.Vehicle {
+        constructor(name:string) {
+            super("CAR: " + name);
+        }
+
+        do():string {
+            return "Im a car";
+        }
+
+        doCar():string {
+            return "Only cars can do this :)";
+        }
     }
 
-    do() : string
-    {
-        return "Im a car";
-    }
-
-    doCar() : string
-    {
-        return "Only cars can do this :)";
-    }
 }

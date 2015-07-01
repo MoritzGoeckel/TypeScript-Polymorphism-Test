@@ -1,19 +1,23 @@
-export class Vehicle
-{
-    private name: string;
+module Vehicle{
 
-    constructor (name: string)
+    export class Vehicle
     {
-        this.name = name;
+        private name: string;
+
+        constructor (name: string)
+        {
+            this.name = name;
+        }
+
+        do() : string
+        {
+            return "Im a vehicle";
+        }
+
+        getName() : string
+        {
+            return this.name;
+        }
     }
 
-    do() : string
-    {
-        return "Im a vehicle";
-    }
-
-    getName() : string
-    {
-        return this.name;
-    }
 }

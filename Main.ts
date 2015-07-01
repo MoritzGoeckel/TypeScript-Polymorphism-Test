@@ -1,12 +1,12 @@
-import VEHICLE = require("Vehicle");
-import CAR = require("Car");
-import BOAT = require("Boat");
+///<reference path='Vehicle.ts'/>
+///<reference path='Car.ts'/>
+///<reference path='Boat.ts'/>
 
 var outputElement = document.getElementById('output');
 
-var vehicleOne: VEHICLE.Vehicle = new BOAT.Boat("One");
-var car: CAR.Car = new CAR.Car("Two");
-var vehicleTwo: VEHICLE.Vehicle = car;
+var vehicleOne: Vehicle.Vehicle = new Boat.Boat("One");
+var car: Car.Car = new Car.Car("Two");
+var vehicleTwo: Vehicle.Vehicle = car;
 
 outputElement.innerHTML = vehicleOne.do() + " " + vehicleOne.getName() + "<br />"
                         + vehicleTwo.do() + " " + vehicleTwo.getName() + "<br />"
