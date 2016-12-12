@@ -17,9 +17,9 @@ var car: Car.Car = new Car.Car("Two");    //Creating a Car that is a Car
 var vehicleTwo: Vehicle.Vehicle = car;    //Referencing the Car as a Vehicle
 
 var outputElement = document.getElementById('output');    //Output the results
-outputElement.innerHTML = vehicleOne.do() + " " + vehicleOne.getName() + "<br />"
+outputElement.innerHTML = vehicleOne.do() + " " + vehicleOne.getName() + "<br />" //Everyone can do and getName
                         + vehicleTwo.do() + " " + vehicleTwo.getName() + "<br />"
-                        + car.do() + " " + car.getName() + " -> " + car.doCar() + "<br />";
+                        + car.do() + " " + car.getName() + " -> " + car.doCar() + "<br />"; //Only cars can doCar
 ```
 
 ##Vehicle
